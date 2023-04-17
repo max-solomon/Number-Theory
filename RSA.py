@@ -1,7 +1,6 @@
 #prime modulus must exceed 126 to avoid cancelling out letters
 from util import brute_force_primes, is_coprime
 from eulers_totient import phi
-# import random 
 import secrets
 
 def random_encrypt(message, n = 300):
@@ -77,15 +76,8 @@ def split(word):
 def tuple_to_list(t):
     return [*t]
 
-# # def random_prime():
-m, p , e = random_encrypt("fuck you")    
-print(decrypt(m,p,e))
+
+# m, p , e = random_encrypt("python is weird")    
+# print(decrypt(m,p,e))
 
 
-# moduli = 151
-# exponent = 13
-# print(decrypt(encrypt("javascript is fuckin trash lmao", moduli, exponent),moduli, exponent))
-
-#TODO 
-# brute force inversion is not a good practice, but neither is your phi
-# what happpens if RSA is applied twice?
