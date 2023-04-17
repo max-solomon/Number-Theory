@@ -1,6 +1,6 @@
 
 # determines the unique factorization of a given integer.
-# uses 4 nested brute force algorithms for determining order, primeness, and divisibility of n, 
+# uses 4 nested brute force algorithms for determining order, primeness of n, divisibility of n, 
 # and generating a list of primes < n to factorize with
 
 from util import is_prime, brute_force_primes
