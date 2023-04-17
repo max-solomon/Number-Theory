@@ -22,16 +22,3 @@ def phi(n):
                     prime_factors.pop(0)
             
     return math.prod(product)
-
-#TODO fix this, define it better
-# returns a list of integers congruent to 1 mod m for some composite number m
-def eulers_theorem(m): # for every a coprime to m, a^phi(n) = 1 modulo m
-    results = []
-    for a in range(m):
-        if is_coprime(a, m):
-            results.append(a**phi(m))
-    
-    return results
-    
-
-# print(phi(4))
