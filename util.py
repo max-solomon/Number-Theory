@@ -31,8 +31,7 @@ def primitive_roots(modulo):
             primitive_roots.append(i+1)
         
     return primitive_roots
- 
- #setting a lower bound may offer you what a sieve cannot       
+        
 # returns a list of primes less than the upper bound argument by checking if each odd number is prime or not        # 
 def brute_force_primes(upperbound, lowerbound=3):
     primes = [2]
