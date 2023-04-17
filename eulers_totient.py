@@ -1,6 +1,6 @@
 from util import is_prime, is_coprime
 from bruteforce_factorization import factorize
-import math
+from math import prod
 
 def phi(n):
     if is_prime(n):
@@ -21,4 +21,4 @@ def phi(n):
                 while prime_factors.count(next_prime) > 0:
                     prime_factors.pop(0)
             
-    return math.prod(product)
+    return prod(product)
