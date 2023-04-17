@@ -22,6 +22,5 @@ def factorize(number):
             while (factored.is_integer()): #if the new number is a result of legal integer division
                 unique_factors.append(next_prime)#store the newly discovered factor,
                 factored = factored/next_prime# and keep dividing
-                
-                
+                     
     return unique_factors #return a list of prime factors of the given number
